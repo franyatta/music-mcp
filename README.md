@@ -1,1 +1,16 @@
-{"content": "# Music MCP - Lyrics Lookup Component\n\nA React component for looking up song lyrics, designed to be integrated with various lyrics APIs.\n\n## Features\n\n- Clean and responsive UI\n- Support for artist and song title search\n- Loading states and error handling\n- Ready for API integration\n- Built with React and Tailwind CSS\n\n## Installation\n\n```bash\nnpm install @your-scope/music-mcp\n```\n\n## Usage\n\n```jsx\nimport { LyricsLookup } from '@your-scope/music-mcp';\n\nfunction App() {\n  return (\n    <div>\n      <LyricsLookup />\n    </div>\n  );\n}\n```\n\n## API Integration\n\nThe component is designed to be integrated with your preferred lyrics API. To integrate with an API:\n\n1. Obtain API credentials from your chosen provider (e.g., Musixmatch, Genius)\n2. Modify the `handleSubmit` function in `LyricsLookup.jsx`\n3. Implement proper error handling and rate limiting\n\nExample integration with Musixmatch API:\n\n```jsx\nconst handleSubmit = async (e) => {\n  e.preventDefault();\n  setLoading(true);\n  setError('');\n  setLyrics('');\n\n  try {\n    const response = await fetch(`https://api.musixmatch.com/ws/1.1/matcher.lyrics.get?q_track=${song}&q_artist=${artist}&apikey=YOUR_API_KEY`);\n    const data = await response.json();\n    \n    if (data.message.header.status_code === 200) {\n      setLyrics(data.message.body.lyrics.lyrics_body);\n    } else {\n      setError('Lyrics not found');\n    }\n  } catch (err) {\n    setError('Failed to fetch lyrics. Please try again.');\n  } finally {\n    setLoading(false);\n  }\n};\n```\n\n## Contributing\n\nContributions are welcome! Please feel free to submit a Pull Request.\n\n## License\n\nMIT", "encoding": "utf-8"}
+# Music MCP - Lyrics Lookup Component
+
+A React component for looking up song lyrics, designed to be integrated with various lyrics APIs.
+
+## Features
+
+- Clean and responsive UI
+- Support for artist and song title search
+- Loading states and error handling
+- Ready for API integration
+- Built with React and Tailwind CSS
+
+## Installation
+
+```bash
+npm install @your-scope/music-mcp
