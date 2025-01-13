@@ -1,1 +1,73 @@
-IyBNdXNpYyBNQ1AgLSBMeXJpY3MgTG9va3VwIENvbXBvbmVudAoKQSBSZWFjdCBjb21wb25lbnQgZm9yIGxvb2tpbmcgdXAgc29uZyBseXJpY3MsIGRlc2lnbmVkIHRvIGJlIGludGVncmF0ZWQgd2l0aCB2YXJpb3VzIGx5cmljcyBBUElzLgoKIyMgRmVhdHVyZXMKCi0gQ2xlYW4gYW5kIHJlc3BvbnNpdmUgVUkKLSBTdXBwb3J0IGZvciBhcnRpc3QgYW5kIHNvbmcgdGl0bGUgc2VhcmNoCi0gTG9hZGluZyBzdGF0ZXMgYW5kIGVycm9yIGhhbmRsaW5nCi0gUmVhZHkgZm9yIEFQSSBpbnRlZ3JhdGlvbgotIEJ1aWx0IHdpdGggUmVhY3QgYW5kIFRhaWx3aW5kIENTUwoKIyMgSW5zdGFsbGF0aW9uCgpgYGBiYXNoCm5wbSBpbnN0YWxsIEB5b3VyLXNjb3BlL211c2ljLW1jcApgYGAKCiMjIFVzYWdlCgpgYGBqc3gKaW1wb3J0IHsgTHlyaWNzTG9va3VwIH0gZnJvbSAnQHlvdXItc2NvcGUvbXVzaWMtbWNwJzsKCmZ1bmN0aW9uIEFwcCgpIHsKICByZXR1cm4gKAogICAgPGRpdj4KICAgICAgPEx5cmljc0xvb2t1cCAvPgogICAgPC9kaXY+CiAgKTsKfQpgYGAKCiMjIEFQSSBJbnRlZ3JhdGlvbgoKVGhlIGNvbXBvbmVudCBpcyBkZXNpZ25lZCB0byBiZSBpbnRlZ3JhdGVkIHdpdGggeW91ciBwcmVmZXJyZWQgbHlyaWNzIEFQSS4gVG8gaW50ZWdyYXRlIHdpdGggYW4gQVBJOgoKMS4gT2J0YWluIEFQSSBjcmVkZW50aWFscyBmcm9tIHlvdXIgY2hvc2VuIHByb3ZpZGVyIChlLmcuLCBNdXNpeG1hdGNoLCBHZW5pdXMpCjIuIE1vZGlmeSB0aGUgYGhhbmRsZVN1Ym1pdGAgZnVuY3Rpb24gaW4gYEx5cmljc0xvb2t1cC5qc3hgCjMuIEltcGxlbWVudCBwcm9wZXIgZXJyb3IgaGFuZGxpbmcgYW5kIHJhdGUgbGltaXRpbmcKCkV4YW1wbGUgaW50ZWdyYXRpb24gd2l0aCBNdXNpeG1hdGNoIEFQSToKCmBgYGpzeApjb25zdCBoYW5kbGVTdWJtaXQgPSBhc3luYyAoZSkgPT4gewogIGUucHJldmVudERlZmF1bHQoKTsKICBzZXRMb2FkaW5nKHRydWUpOwogIHNldEVycm9yKCcnKTsKICBzZXRMeXJpY3MoJycpOwoKICB0cnkgewogICAgY29uc3QgcmVzcG9uc2UgPSBhd2FpdCBmZXRjaChgaHR0cHM6Ly9hcGkubXVzaXhtYXRjaC5jb20vd3MvMS4xL21hdGNoZXIubHlyaWNzLmdldD9xX3RyYWNrPSR7c29uZ30mcV9hcnRpc3Q9JHthcnRpc3R9JmFwaWtleT1ZT1VSX0FQSV9LRVlgKTsKICAgIGNvbnN0IGRhdGEgPSBhd2FpdCByZXNwb25zZS5qc29uKCk7CiAgICAKICAgIGlmIChkYXRhLm1lc3NhZ2UuaGVhZGVyLnN0YXR1c19jb2RlID09PSAyMDApIHsKICAgICAgc2V0THlyaWNzKGRhdGEubWVzc2FnZS5ib2R5Lmx5cmljcy5seXJpY3NfYm9keSk7CiAgICB9IGVsc2UgewogICAgICBzZXRFcnJvcignTHlyaWNzIG5vdCBmb3VuZCcpOwogICAgfQogIH0gY2F0Y2ggKGVycikgewogICAgc2V0RXJyb3IoJ0ZhaWxlZCB0byBmZXRjaCBseXJpY3MuIFBsZWFzZSB0cnkgYWdhaW4uJyk7CiAgfSBmaW5hbGx5IHsKICAgIHNldExvYWRpbmcoZmFsc2UpOwogIH0KfTsKYGBgCgojIyBDb250cmlidXRpbmcKCkNvbnRyaWJ1dGlvbnMgYXJlIHdlbGNvbWUhIFBsZWFzZSBmZWVsIGZyZWUgdG8gc3VibWl0IGEgUHVsbCBSZXF1ZXN0LgoKIyMgTGljZW5zZQoKTUlU
+# Music MCP - Lyrics Lookup Component
+
+A React component for looking up song lyrics, designed to be integrated with various lyrics APIs.
+
+## Features
+
+- Clean and responsive UI
+- Support for artist and song title search
+- Loading states and error handling
+- Ready for API integration
+- Built with React and Tailwind CSS
+
+## Installation
+
+```bash
+npm install @your-scope/music-mcp
+```
+
+## Usage
+
+```jsx
+import { LyricsLookup } from '@your-scope/music-mcp';
+
+function App() {
+  return (
+    <div>
+      <LyricsLookup />
+    </div>
+  );
+}
+```
+
+## API Integration
+
+The component is designed to be integrated with your preferred lyrics API. To integrate with an API:
+
+1. Obtain API credentials from your chosen provider (e.g., Musixmatch, Genius)
+2. Modify the `handleSubmit` function in `LyricsLookup.jsx`
+3. Implement proper error handling and rate limiting
+
+Example integration with Musixmatch API:
+
+```jsx
+const handleSubmit = async (e) => {
+  e.preventDefault();
+  setLoading(true);
+  setError('');
+  setLyrics('');
+
+  try {
+    const response = await fetch(`https://api.musixmatch.com/ws/1.1/matcher.lyrics.get?q_track=${song}&q_artist=${artist}&apikey=YOUR_API_KEY`);
+    const data = await response.json();
+    
+    if (data.message.header.status_code === 200) {
+      setLyrics(data.message.body.lyrics.lyrics_body);
+    } else {
+      setError('Lyrics not found');
+    }
+  } catch (err) {
+    setError('Failed to fetch lyrics. Please try again.');
+  } finally {
+    setLoading(false);
+  }
+};
+```
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+MIT
